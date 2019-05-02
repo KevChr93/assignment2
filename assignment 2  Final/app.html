@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<!-- ----------------------------------------------------------------------------------------- -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="assignment2">
+    <meta name="authors" content="Kevin Christopher 815007355 & Amrit Sookhai 814001632 ">
+    <title>Assignment2</title>
+
+    <style>
+        
+
+        ul {
+            -webkit-column-count: 5;
+            column-count: 5;
+            list-style-position: inside;
+         }
+        .gList{
+            text-align: left!important;
+        }
+        footer, header{
+            color: aliceblue;
+        
+            padding: 15px;
+            text-align: center;
+            background-color: #17a2b8;
+        }
+        h2{
+            text-align: center!important;
+        }
+        .container{
+            text-align: center;
+        }
+        body{
+             text-align: center;
+        }
+ </style>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<!-- ----------------------------------------------------------------------------------------- -->
+
+<body id="app">
+    <header>
+        <h2>Assignment 2:</h2>
+        <h2>Section 3: Application</h2>
+    </header>
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- question 1 -->
+    <hr>
+    <div id="Question1">
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+
+                    <form id="createGenre" onsubmit="return false">
+                        <h2>Add New Genre:</h2>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Enter new genre name">
+                        </div>
+                        <button class="btn btn-info btn-block my-4" type="Submit" oneclick=>Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="gList">
+                <h2>Available Genres</h2>
+                <ul id="genreList"></ul>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <h2>Add New Movie:</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form id="createMovie" onsubmit="return false">
+                    <input type="text" id="uuid" class="form-control mb-4" placeholder="UUID">
+                    <input type="text" id="title" class="form-control mb-4" placeholder="Movie Title">
+                    <select type="text" id="genre" class="form-control mb-4" placeholder="Genre...">
+                        <option  value="" disabled selected>Select a Genre...</option>
+                    </select>
+                    <input type="text" id="year" class="form-control mb-4" placeholder="Year Released">
+
+
+                    <button class="btn btn-info btn-block my-4" type="Submit" oneclick=>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+        <h2 class="display-6">Movie List:</h2>
+        <table id="movieList" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>UUID</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+
+    <!-- footerz -->
+    <div id="footer">
+        <script src='js/movieGenre.js'></script>
+        <script src="js/app.js"></script>
+        <script src="js/util.js"></script>
+        <footer class="container-fluid padding">
+            <p>Kevin christopher 815007355 & Amrit Sookhai 814001632</p>
+
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

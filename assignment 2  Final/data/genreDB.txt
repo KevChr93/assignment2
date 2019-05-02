@@ -1,0 +1,1 @@
+Action,Adventure,Comedy,Crime,Drama,Fantasy,Historical,Horror,Mystery,Philosophical,Political,Romance,Satire,Sci-fi,Thriller,Western,Animation,Live-action

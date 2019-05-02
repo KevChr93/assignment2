@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<!-- ----------------------------------------------------------------------------------------- -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="assignment2">
+    <meta name="authors" content="Kevin Christopher 815007355 & Amrit Sookhai 814001632 ">
+    <title>Bonus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+<style>
+
+
+    h2,p{
+        text-align: center;
+    }
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  footer, header{
+            color: aliceblue;
+        
+            padding: 15px;
+            text-align: center;
+            background-color: #17a2b8;
+        }
+  
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }</style>
+
+<body id="app">
+    <header>
+        <h2>Assignment 2: Bonus</h2>
+        <h2>Merger</h2>
+    </header>
+    <div class="container">
+
+        <form id="createName" onsubmit="return false">
+            <h2>Add New Name:</h2>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+            <button class="btn btn-info btn-block my-4" type="Submit" oneclick=>Submit</button>
+        </form>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div id="firstNrr"></div>
+        <div id="lastNrr"></div>
+    </div>
+    <hr>
+    <div class="row">
+
+        <div class="column">
+            <button id=m2single class="btn btn-info btn-block my-4" onclick="mergeSingle()">Merge to Single String</button>
+            <button id=m2object class="btn btn-info btn-block my-4" onclick="mergeObject()">Merge to Object</button>
+
+
+        </div>
+        <div class="column">
+            <h2> Merged Results:</h2>
+            <p id="mergedArr"></p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <script src="js/useMerge.js"></script>
+        <script src="js/merger.js"></script>
+
+        <footer class="container-fluid padding">
+            <p>Kevin christopher 815007355 & Amrit Sookhai 814001632</p>
+
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>
